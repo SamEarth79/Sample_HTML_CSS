@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    height: 80px;
+    background-color: black;
+}
+
+.nav_container
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    position: sticky;
+    z-index: 900;
+    padding: 0 50px;
+}
+
+.nav_logo{
+    text-decoration: none;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item{
+    text-decoration: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+}
+
+.nav-links:hover{
+    color: #f77062;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_menu{
+        font-size: 1rem;
+    }
+
+    .nav_container{
+        padding: 0 10px;
+    }
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 0 2em 2em ;
+    height: 100vh;
+    background-color: grey;
+    background-size: 100%;
+    background-image: linear-gradient(to right, #0c0b0b 0%, #181717 100%);
+}
+
+.main-text h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.main-text h2{
+    text-decoration: none;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #0c08ff 0%, #9b99ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 4rem;
+}
+
+.main-text p{
+    color: white;
+    font-size: 1.3rem;
+    margin: 1em 0;
+}
+
+.main-btn{
+    padding: 20px;
+    width: 12em;
+    border-radius: 10px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+}
+
+
+.main-btn:hover{
+    color: white;
+    font-size: 1.4em;
+    transition: all 0.2s ease-out;
+}
+
+.main-img img{
+    width: 80%;
+    height: 80%;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .main-container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .main-container h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .main-container h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .main-container p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .main-btn{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 10em;
+        margin: 0 auto;
+    }
+
+    
+
+    
+
+}
